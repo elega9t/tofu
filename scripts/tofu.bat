@@ -1,0 +1,1 @@
+java -Xmx2g -jar tofu.jar

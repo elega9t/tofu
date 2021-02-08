@@ -1,0 +1,132 @@
+{
+    "db": {
+        "driver": "org.h2.Driver",
+        "url": "jdbc:h2:./database/local;MODE=MySQL",
+        "user": "sa",
+        "password": ""
+    },
+    "data": {
+        "investigation": [
+            {
+                "name": "Source",
+                "dbField": "source",
+                "type": "longtext",
+                "dataPoint": true,
+                "iconName": "document"
+            },
+            {
+                "name": "Auditor",
+                "dbField": "auditor",
+                "excel": "auditor",
+                "match": "contains",
+                "type": "text"
+            },
+            {
+                "name": "Date",
+                "dbField": "date",
+                "excel": "date",
+                "match": "exact",
+                "type": "date",
+                "dataPoint": true,
+                "iconName": "calendar"
+            },
+            {
+                "name": "District",
+                "dbField": "district",
+                "excel": "district",
+                "match": "contains",
+                "type": "text"
+            },
+            {
+                "name": "Hospital Id",
+                "dbField": "hospital_id",
+                "excel": "hospital id",
+                "match": "contains",
+                "type": "text",
+                "dataPoint": true,
+                "iconName": "hospital"
+            },
+            {
+                "name": "Case Id",
+                "dbField": "case_id",
+                "excel": "case id",
+                "match": "contains",
+                "required": true,
+                "type": "longtext",
+                "key": true
+            },
+            {
+                "name": "Reason",
+                "dbField": "review_reason",
+                "excel": "reason",
+                "match": "contains",
+                "type": "clob"
+            },
+            {
+                "name": "Speciality",
+                "dbField": "speciality",
+                "excel": "speciality",
+                "match": "contains",
+                "type": "text"
+            },
+            {
+                "name": "Priority",
+                "dbField": "priority",
+                "excel": "priority",
+                "match": "contains",
+                "type": "text"
+            },
+            {
+                "name": "Date Of Sending Review",
+                "dbField": "date_review_sent",
+                "excel": "sending",
+                "match": "contains",
+                "type": "date"
+            },
+            {
+                "name": "Date Of Receiving Review",
+                "dbField": "date_review_received",
+                "excel": "reciving",
+                "match": "contains",
+                "type": "date"
+            },
+            {
+                "name": "Opinion",
+                "dbField": "opinion",
+                "excel": "opinion",
+                "match": "contains",
+                "type": "clob"
+            },
+            {
+                "name": "Remark",
+                "dbField": "remarks",
+                "excel": "remark",
+                "match": "contains",
+                "type": "clob"
+            },
+            {
+                "name": "Query",
+                "dbField": "query",
+                "excel": "query",
+                "match": "contains",
+                "type": "clob"
+            },
+            {
+                "name": "Reviewer",
+                "dbField": "reviewer",
+                "excel": "reviewer",
+                "match": "contains",
+                "type": "clob",
+                "editable": true
+            },
+            {
+                "name": "Reviewer Remarks",
+                "dbField": "remarks_reviewer",
+                "excel": "suspicious",
+                "match": "contains",
+                "type": "clob",
+                "editable": true
+            }
+        ]
+    }
+}
